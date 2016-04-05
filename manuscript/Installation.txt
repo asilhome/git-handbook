@@ -1,5 +1,7 @@
 # Installation
 
+## Installation
+
 At the time of the writing, the versions are:
 
 - GitLab7.12.2
@@ -13,3 +15,15 @@ Download latest [GitLab](https://about.gitlab.com/downloads)
 Select operating system.
 
 ![operating system](images/gitlab-centos6.png)
+
+## Configuration
+
+Configuration file is /etc/gitlab/gitlab.rb:
+
+### External URL
+
+### Email
+
+```
+$ sudo gitlab-ctl reconfigure
+```

@@ -1,0 +1,10 @@
+# Git Command using Git Bash
+
+## Workflows using Git Command
+
+Launch Git Bash from Windows Start Menu.
+
+|Workflows                            | Command               |
+|-------------------------------------|-----------------------|
+|Clone a new project from GitLab      | $ git clone <url>     |
+|Fetch: Get origin/master info        | $ git fetch           |
