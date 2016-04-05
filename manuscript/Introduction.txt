@@ -1,0 +1,9 @@
+# Introduction
+
+## Version Control
+
+Version Control helps developers to collaborate their development among team members.
+
+## Git
+
+The choice for the version control is Git, created by Linus for Linux project.

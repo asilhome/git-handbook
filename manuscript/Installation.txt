@@ -1,0 +1,15 @@
+# Installation
+
+At the time of the writing, the versions are:
+
+- GitLab7.12.2
+- Git1.9.5
+- SourceTree1.6.20
+
+Download latest [GitLab](https://about.gitlab.com/downloads)
+
+![GitLab CE Download page](images/gitlab-download.png)
+
+Select operating system.
+
+![operating system](images/gitlab-centos6.png)
