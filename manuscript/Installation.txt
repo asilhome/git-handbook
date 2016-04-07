@@ -16,14 +16,62 @@ Select operating system.
 
 ![operating system](images/gitlab-centos6.png)
 
+Go to Step 2, click link `select and download the package manually` which will go to: [package](https://packages.gitlab.com/gitlab/gitlab-ce)
+
+![Package](images/gitlab-download-package-manual.png)
+
+Click link package: gitlab-ce-8.4.4-ce.0.e16.x86_64.rpm
+
+It will go to: https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/6/gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm
+
+![GitLab Package](images/gitlab-package.png)
+
+Click **Download** at the top right corner.
+
+Launch **WinSCP: 10.10.5.137**, UserName/Password: **root/infopro**
+Goto path: `/root`
+Copy downloaded file, **gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm** to path /root in WinSCP
+Open **Putty**. Login **10.10.5.137**, make sure at path **/root**.
+Install package:
+
+```
+$ rpm -i gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm
+```
+![Package Installation](images/gitlab-install-rpm.png)
+
+Configure and start GitLab.
+
+![Package Installation](images/gitlab-configure-start.png)
+
+After GitLab installation, for the first time a user is an Administrator. An administrator will sign in as a default user, username is root and password is 123.
+
+Go to http://10.10.5.137/
+
+GitLab forced to change password, so Login as root/icba10@infopro as username/password
+
 ## Configuration
 
 Configuration file is /etc/gitlab/gitlab.rb:
 
 ### External URL
 
-### Email
+    external_url 'http://10.10.5.137'
 
+### For sending application email via SMTP
+
+    gitlab_rails['gitlab_email_from'] = 'gitlab@infopro.com.my'
+    ################################
+    # GitLab email server settings #
+    ################################
+    gitlab_rails['smtp_enable'] = true
+    gitlab_rails['smtp_address'] = "newmail.infopro.com.my"
+    gitlab_rails['smtp_port'] = 25
+    gitlab_rails['smtp_domain'] = "infopro.com.my"
+    gitlab_rails['smtp_authentication'] = "login"
+    gitlab_rails['smtp_enable_starttls_auto'] = true
+
+Save the file then reconfigure GitLab.
 ```
-$ sudo gitlab-ctl reconfigure
+sudo gitlab-ctl reconfigure
 ```
+
