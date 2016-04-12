@@ -71,6 +71,7 @@ Configuration file is /etc/gitlab/gitlab.rb:
     gitlab_rails['smtp_enable_starttls_auto'] = true
 
 Save the file then reconfigure GitLab.
+
 ```
 sudo gitlab-ctl reconfigure
 ```

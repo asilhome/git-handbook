@@ -4,10 +4,47 @@
 
 ### Register New User
 
+For Administrator, to register a new user, click on New User.
+
+![Users](images/gitlab-users.png)
+
+Enter required fields.
+
+![New User](images/gitlab-new-user.png)
+
+Determine user access:
+
+1. Project limit: Administrator may set limit to 0 if he doesn’t want developers to create project
+2. Can create group: Uncheck if he wants no one other than himself
+3. Admin: Uncheck if the user is non-administration
+
+![User Access](images/gitlab-user-access.png)
+
+After registration, the newly registered user will receive email notification with a link.
+
 ### Roles
 
+There 3 main roles
+- Master
+- Developer
+- and Guest
+
 ### Organization
+
+How Groups and Projects are organized in GitLab.
 
 ### Sign In
 
 #### First Time Sign In
+
+The intended user will receive an Email notification.
+
+![Email Notification](images/email-gitlab-user-created.png)
+
+Click the link that says, “Click here to set your password”.
+
+![Change Password](images/gitlab-chgpwd.png)
+
+Enter new password and confirm it. Then Click Change New Password.
+
+![Successfully change password](images/gitlab-chgpwd-success.png)

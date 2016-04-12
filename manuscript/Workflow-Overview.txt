@@ -1,0 +1,227 @@
+## Workflow
+
+### Overview
+
+The workflow was inspired by a simple GitHub Flow.
+
+<Workflow image>
+
+There are 2 main roles involves in the process. One is Master, who typically handles Merge Request and Code Review. The other is Developer.
+
+To start working on a project:
+
+A Developer need to clone a repository. Clone is a local copy, so it has all history of commits available.
+- The Developer must be a registered user of GitLab and Administrator must add you as a member of project.
+
+**Branch**. A good practice is developer will create a new branch for his work rather than working on his local Master.
+
+**Checkout**. Will switch to working branch.
+
+Changes made, Developer will **Stage** and comment then **Commit** his changes.
+
+Once in a while or every morning, developer will **Fetch** status to see if there’s latest update from origin Master. If he needs to, he’ll Checkout Master, Pull update. Then checkout working branch and Merge latest update into his working branch. Then he can continue working.
+
+After his work has completed he Push his working branch to origin `<branch>`.
+
+Here, he’ll create a **Merge Request** to apply changes to origin Master.
+
+If Master approves and accepts, his origin Branch will merge to origin Master.
+
+### The Workflow
+
+#### Clone A Project
+
+In GitLab, go to project’s front page and it displays 2 ways to clone a project. Choose SSH and copy the URL.
+
+![Project Clone](images/gitlab-project-clone-url.png)
+
+Launch SourceTree. Paste URL and set destination path.
+
+![Project Clone](images/st-project-clone-url.png)
+
+This will create a local copy of the repository to local directory. Project cloning will take some time.
+
+![Project Cloned](images/st-project-cloned.png)
+
+#### Create a Working Copy using Branch
+
+To start working on project, Developer creates a branch. The name of the branch would relate to feature or bug-fix.
+
+Create and checkout a new Branch.
+
+![New Branch](images/st-branch-new.png)
+
+A new branch is created.
+
+![Branch Created](images/st-branch-created.png)
+
+#### Pull Latest Changes from Origin Master to Local Master
+
+##### Fetch
+
+Git command:
+
+    git fetch origin master
+
+From time to time or early in the morning, Developer wants to make sure his local Master is not left far too behind.
+
+Click on Fetch to get latest info from origin Master. A pop-up window appears, then click OK.
+
+![Fetch](images/st-fetch.png)
+
+A notification will display in Pull button of how many commits need to be pulled.
+
+![Fetched](images/st-fetched.png)
+
+##### Pull
+
+Pull latest updates from origin Master.
+
+![Pull](images/st-pull.png)
+
+#### Commit Changes to Local Branch
+
+Changes to the files will be shown as Uncommitted changes
+
+![Uncommit](images/st-uncommit.png)
+
+<Image of unstage>[ unstage image]
+
+Stage files you want to commit,
+
+![Stage](images/st-stage.png)
+
+Describe the changes
+
+![Comment](images/st-comment.png)
+
+Click Commit button. Changes committed.
+
+![Committed](images/st-commited.png)
+
+#### Push Local Branch to Origin Branch
+
+When Developer’s work is ready and tested, he wants to push his branch to origin. Developer may need to make sure his branch is up-to-date.
+
+Click on Push, select branch to push.
+
+![Push](images/st-push.png)
+
+A remote branch is created.
+
+![Pushed](images/st-pushed.png)
+
+#### Request to Merge Origin Branch to Origin Master
+
+In order to apply changes back to origin master, create a Merge Request.
+
+![Compare](images/gitlab-merge-request-compare.png)
+
+Set the Title and describe.
+
+![New Merge Request](images/gitlab-merge-request-new.png)
+
+Assign to a Master role then click Submit.
+
+![Assignment](images/gitlab-merge-request-assign.png)
+
+#### Accept Request to Merge Origin Branch to Origin Master
+
+For Master, incoming Merge Requests’ are notified through email. Accept Merge Request and merge the branch to origin Master. Select Remove source-branch.
+
+![Accept](images/gitlab-merge-request-accept.png)
+
+Result of merged.
+
+![Merged](images/gitlab-Merged.png)
+
+In SourceTree, result of merged.
+
+![Merged](images/st-merged.png)
+
+### Miscellaneous
+
+#### Checkout Any Branch
+
+Select a branch to switch branch. Or double-click the branch.
+
+![Checkout](images/st-checkout.png)
+
+#### Merge Local Master into Local Branch
+
+After you have the latest update for your local Master, you may need to sync your local branch, so that’s always update to date.
+
+Select you local Master, right-mouse-click it. Select Merge master into current branch.
+
+![Merge](images/st-merge-master-branch.png)
+
+#### Manage Conflicts
+
+When there’s conflict during merging process, files with uncommitted changes appear.
+
+![Conflict](images/st-merge-conflict.png)
+
+Those files affected will show markers where it happens.
+
+![Conflict](images/text-conflict.png)
+
+By removing markers and choosing the right update, save the file and commit the changes.
+
+![Resolve](images/text-conflict-resolve.png)
+
+#### Ignore Files
+
+There are files you can ignore so that it’ll not commit to repository.
+
+![Ignore](images/st-ignore.png)
+
+.gitignore files is created (hidden) and commit the file.
+
+![Ignore](images/st-gitignore.png)
+
+#### Discard Files
+
+You can discard changes of uncommitted files.
+
+![Discard](images/st-discard.png)
+
+#### Tag
+
+##### Create Tag
+
+Use Tag for versioning of the source code.
+
+![Tagging](images/st-tag.png)
+
+##### Versioning
+
+Use x.y.z.
+x = major
+y = minor
+y = fixes
+
+#### Initialize Project
+
+Stage files first then commit.
+
+![Init Project](images/st-init.png)
+
+After commit, master branch is created by default.
+
+![Init Commit](images/st-init-commit.png)
+
+Push master branch to remote.
+
+![Push](images/st-init-push.png)
+
+#### README
+
+##### Markdown
+
+Most of the documentation in GitLab is using Markdown format.
+
+#### CHANGELOG
+
+##### Format
+
+The format of CHANGELOG is like below:

@@ -2,4 +2,8 @@ Introduction.txt
 Installation.txt
 User.txt
 Group.txt
+Project.txt
+SSH-Keys.txt
+Admin-Misc.txt
+Workflow-Overview.txt
 Git-Command.txt

@@ -1,0 +1,30 @@
+## Project
+
+### Create a New Project
+
+To create a new project, a group must be selected first. Then click **New Project**.
+
+![Projects](images/gitlab-projects.png)
+
+Access: An owner of a Group or a User with more than 1 project limit.
+Click on New Project. Name the project. Set Visibility Level to Private.
+
+![New Project](images/gitlab-project-new.png)
+
+Project created.
+
+![Project Created](images/gitlab-project-created.png)
+
+### Add Member to Project
+
+Add member to project. Select role of the user.
+
+![Add Member](images/gitlab-project-member-add.png)
+
+Member is added.
+
+![Member Added](images/gitlab-project-members.png)
+
+Access granted.
+
+![Access Granted](images/gitlab-project-email-granted.png)

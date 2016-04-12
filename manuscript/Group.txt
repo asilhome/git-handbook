@@ -1,3 +1,17 @@
 ## Group
 
 ### Create a New Group
+
+Reason to create a group is it has access permission that you can control.
+Access: To create a group only by user who has **Can create group** enabled.
+Give it a name and click on **Create Group**.
+
+![New Group](images/gitlab-group-create.png)
+
+A new group is created.
+
+![New Group Created](images/gitlab-group-created.png)
+
+And notified by Email.
+
+![New Group Created Notified](images/gitlab-email-group-created.png)

@@ -1,0 +1,12 @@
+## Miscellaneous
+
+### Default User Information
+
+Enter full name so that your team members recognize you.
+<Image>[ missing]
+
+### Backup
+
+It’s important to regularly backup your repos. You can use ad-hoc backup or periodically backup.
+
+### Linux

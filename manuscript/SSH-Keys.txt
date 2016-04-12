@@ -1,0 +1,47 @@
+## SSH Keys
+
+### Generate SSH Keys
+
+Access: Registered User
+
+Launch Git Bash.
+
+![Git Bash](images/ssh-win-git-bash.png)
+
+At the prompt, type a command:
+
+```
+ssh-keygen
+```
+
+Press all enter to accept default.
+
+![ssh-keygen](images/ssh-keygen.png)
+
+### Add SSH Public Key to GitLab
+
+For Windows user, go to folder:
+
+`C:\Users\<user_account>\.ssh`
+
+![Folder](images/ssh-folder.png)
+
+Open file <ssh-key>.pub in a WordPad. Copy ssh-key string.
+
+![Copy Public Key](images/ssh-copy-key.png)
+
+Switch to GitLab. Go to menu: Project Settings -> SSH Keys
+
+![Keys](images/gitlab-ssh-keys.png)
+
+Click Add SSH Key button, then paste the string. Click <Add Key> to add key.
+
+![Add Key](images/gitlab-ssh-key-add.png)
+
+### Add SSH Private Key to SourceTree
+
+Access: public
+
+Launch SourceTree. Go to menu: Tools > Options. In General tab, select SSH Client: **OpenSSH**. Select SSH Key: Private key file from .ssh folder.
+
+![Private Key](images/st-openssh.png)
