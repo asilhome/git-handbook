@@ -27,9 +27,7 @@ Here, he’ll create a **Merge Request** to apply changes to origin Master.
 
 If Master approves and accepts, his origin Branch will merge to origin Master.
 
-## The Workflow
-
-### Clone A Project
+## Clone A Project
 
 In GitLab, go to project’s front page and it displays 2 ways to clone a project. Choose SSH and copy the URL.
 
@@ -43,7 +41,7 @@ This will create a local copy of the repository to local directory. Project clon
 
 ![Project Cloned](images/st-project-cloned.png)
 
-### Create a Working Copy using Branch
+## Create a Working Copy using Branch
 
 To start working on project, Developer creates a branch. The name of the branch would relate to feature or bug-fix.
 
@@ -55,9 +53,9 @@ A new branch is created.
 
 ![Branch Created](images/st-branch-created.png)
 
-### Pull Latest Changes from Origin Master to Local Master
+## Pull Latest Changes from Origin Master to Local Master
 
-#### Fetch
+### Fetch
 
 Git command:
 
@@ -73,13 +71,13 @@ A notification will display in Pull button of how many commits need to be pulled
 
 ![Fetched](images/st-fetched.png)
 
-#### Pull
+### Pull
 
 Pull latest updates from origin Master.
 
 ![Pull](images/st-pull.png)
 
-### Commit Changes to Local Branch
+## Commit Changes to Local Branch
 
 Changes to the files will be shown as Uncommitted changes
 
@@ -99,7 +97,7 @@ Click Commit button. Changes committed.
 
 ![Committed](images/st-commited.png)
 
-### Push Local Branch to Origin Branch
+## Push Local Branch to Origin Branch
 
 When Developer’s work is ready and tested, he wants to push his branch to origin. Developer may need to make sure his branch is up-to-date.
 
@@ -111,7 +109,7 @@ A remote branch is created.
 
 ![Pushed](images/st-pushed.png)
 
-### Request to Merge Origin Branch to Origin Master
+## Request to Merge Origin Branch to Origin Master
 
 In order to apply changes back to origin master, create a Merge Request.
 
@@ -125,7 +123,7 @@ Assign to a Master role then click Submit.
 
 ![Assignment](images/gitlab-merge-request-assign.png)
 
-### Accept Request to Merge Origin Branch to Origin Master
+## Accept Request to Merge Origin Branch to Origin Master
 
 For Master, incoming Merge Requests’ are notified through email. Accept Merge Request and merge the branch to origin Master. Select Remove source-branch.
 
