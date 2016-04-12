@@ -1,6 +1,6 @@
-## Workflow
+# Workflow
 
-### Overview
+## Overview
 
 The workflow was inspired by a simple GitHub Flow.
 
@@ -27,9 +27,9 @@ Here, he’ll create a **Merge Request** to apply changes to origin Master.
 
 If Master approves and accepts, his origin Branch will merge to origin Master.
 
-### The Workflow
+## The Workflow
 
-#### Clone A Project
+### Clone A Project
 
 In GitLab, go to project’s front page and it displays 2 ways to clone a project. Choose SSH and copy the URL.
 
@@ -43,7 +43,7 @@ This will create a local copy of the repository to local directory. Project clon
 
 ![Project Cloned](images/st-project-cloned.png)
 
-#### Create a Working Copy using Branch
+### Create a Working Copy using Branch
 
 To start working on project, Developer creates a branch. The name of the branch would relate to feature or bug-fix.
 
@@ -55,9 +55,9 @@ A new branch is created.
 
 ![Branch Created](images/st-branch-created.png)
 
-#### Pull Latest Changes from Origin Master to Local Master
+### Pull Latest Changes from Origin Master to Local Master
 
-##### Fetch
+#### Fetch
 
 Git command:
 
@@ -73,13 +73,13 @@ A notification will display in Pull button of how many commits need to be pulled
 
 ![Fetched](images/st-fetched.png)
 
-##### Pull
+#### Pull
 
 Pull latest updates from origin Master.
 
 ![Pull](images/st-pull.png)
 
-#### Commit Changes to Local Branch
+### Commit Changes to Local Branch
 
 Changes to the files will be shown as Uncommitted changes
 
@@ -99,7 +99,7 @@ Click Commit button. Changes committed.
 
 ![Committed](images/st-commited.png)
 
-#### Push Local Branch to Origin Branch
+### Push Local Branch to Origin Branch
 
 When Developer’s work is ready and tested, he wants to push his branch to origin. Developer may need to make sure his branch is up-to-date.
 
@@ -111,7 +111,7 @@ A remote branch is created.
 
 ![Pushed](images/st-pushed.png)
 
-#### Request to Merge Origin Branch to Origin Master
+### Request to Merge Origin Branch to Origin Master
 
 In order to apply changes back to origin master, create a Merge Request.
 
@@ -125,7 +125,7 @@ Assign to a Master role then click Submit.
 
 ![Assignment](images/gitlab-merge-request-assign.png)
 
-#### Accept Request to Merge Origin Branch to Origin Master
+### Accept Request to Merge Origin Branch to Origin Master
 
 For Master, incoming Merge Requests’ are notified through email. Accept Merge Request and merge the branch to origin Master. Select Remove source-branch.
 
@@ -139,15 +139,15 @@ In SourceTree, result of merged.
 
 ![Merged](images/st-merged.png)
 
-### Miscellaneous
+## Miscellaneous
 
-#### Checkout Any Branch
+### Checkout Any Branch
 
 Select a branch to switch branch. Or double-click the branch.
 
 ![Checkout](images/st-checkout.png)
 
-#### Merge Local Master into Local Branch
+### Merge Local Master into Local Branch
 
 After you have the latest update for your local Master, you may need to sync your local branch, so that’s always update to date.
 
@@ -155,7 +155,7 @@ Select you local Master, right-mouse-click it. Select Merge master into current 
 
 ![Merge](images/st-merge-master-branch.png)
 
-#### Manage Conflicts
+### Manage Conflicts
 
 When there’s conflict during merging process, files with uncommitted changes appear.
 
@@ -169,7 +169,7 @@ By removing markers and choosing the right update, save the file and commit the 
 
 ![Resolve](images/text-conflict-resolve.png)
 
-#### Ignore Files
+### Ignore Files
 
 There are files you can ignore so that it’ll not commit to repository.
 
@@ -179,28 +179,28 @@ There are files you can ignore so that it’ll not commit to repository.
 
 ![Ignore](images/st-gitignore.png)
 
-#### Discard Files
+### Discard Files
 
 You can discard changes of uncommitted files.
 
 ![Discard](images/st-discard.png)
 
-#### Tag
+### Tag
 
-##### Create Tag
+#### Create Tag
 
 Use Tag for versioning of the source code.
 
 ![Tagging](images/st-tag.png)
 
-##### Versioning
+#### Versioning
 
 Use x.y.z.
 x = major
 y = minor
 y = fixes
 
-#### Initialize Project
+### Initialize Project
 
 Stage files first then commit.
 
@@ -214,14 +214,14 @@ Push master branch to remote.
 
 ![Push](images/st-init-push.png)
 
-#### README
+### README
 
-##### Markdown
+#### Markdown
 
 Most of the documentation in GitLab is using Markdown format.
 
-#### CHANGELOG
+### CHANGELOG
 
-##### Format
+#### Format
 
 The format of CHANGELOG is like below:
