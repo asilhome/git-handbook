@@ -1,12 +1,12 @@
 # Setup
 
-## Installation
-
 At the time of the writing, the versions are:
 
-- GitLab7.12.2
-- Git1.9.5
-- SourceTree1.6.20
+- GitLab 7.12.2
+- Git 1.9.5
+- SourceTree 1.6.20
+
+## Installation
 
 Download latest [GitLab](https://about.gitlab.com/downloads)
 
@@ -29,25 +29,28 @@ It will go to: https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/6/gitlab
 Click **Download** at the top right corner.
 
 Launch **WinSCP: 10.10.5.137**, UserName/Password: **root/infopro**
+
 Goto path: `/root`
+
 Copy downloaded file, **gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm** to path /root in WinSCP
+
 Open **Putty**. Login **10.10.5.137**, make sure at path **/root**.
+
 Install package:
 
-```
-$ rpm -i gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm
-```
+    rpm -i gitlab-ce-8.4.4-ce.0.el6.x86_64.rpm
+
 ![Package Installation](images/gitlab-install-rpm.png)
 
 Configure and start GitLab.
 
 ![Package Installation](images/gitlab-configure-start.png)
 
-After GitLab installation, for the first time a user is an Administrator. An administrator will sign in as a default user, username is root and password is 123.
+Go to `http://10.10.5.137/`
 
-Go to http://10.10.5.137/
+After GitLab installation, by default a user is an Administrator.
 
-GitLab forced to change password, so Login as root/icba10@infopro as username/password
+GitLab will force to change password.
 
 ## Configuration
 
